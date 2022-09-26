@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<input #input type="text" (keyup.enter)="selectPokemon(input.value)" />
+<p *ngIf="pokemonSelected">
+  Vous avez sélectionné le pokemon :{{ pokemonSelected?.name }}
+</p>
+<nav>
+  <div class="nav-wrapper teal">
+    <a href="#" class="brand-logo center">
+      Pokedéx
+    </a>
+  </div>
+</nav>
+<router-outlet></router-outlet>
